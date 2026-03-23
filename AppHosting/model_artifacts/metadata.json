@@ -1,0 +1,88 @@
+{
+  "model_name": "CatBoostRegressor_Tuned",
+  "feature_columns": [
+    "job_title",
+    "education_level",
+    "company_size",
+    "location",
+    "remote_work",
+    "experience_years",
+    "skills_count",
+    "certifications"
+  ],
+  "categorical_features": [
+    "job_title",
+    "education_level",
+    "company_size",
+    "location",
+    "remote_work"
+  ],
+  "numeric_features": [
+    "experience_years",
+    "skills_count",
+    "certifications"
+  ],
+  "target_column": "salary",
+  "category_options": {
+    "job_title": [
+      "AI Engineer",
+      "Backend Developer",
+      "Business Analyst",
+      "Cloud Engineer",
+      "Cybersecurity Analyst",
+      "Data Analyst",
+      "Data Scientist",
+      "DevOps Engineer",
+      "Frontend Developer",
+      "Machine Learning Engineer",
+      "Product Manager",
+      "Software Engineer"
+    ],
+    "education_level": [
+      "Bachelor",
+      "Diploma",
+      "High School",
+      "Master",
+      "PhD"
+    ],
+    "company_size": [
+      "Enterprise",
+      "Large",
+      "Medium",
+      "Small",
+      "Startup"
+    ],
+    "location": [
+      "Australia",
+      "Canada",
+      "Germany",
+      "India",
+      "Netherlands",
+      "Singapore",
+      "Sweden",
+      "UK",
+      "USA",
+      "Unknown"
+    ],
+    "remote_work": [
+      "Hybrid",
+      "No",
+      "Yes"
+    ]
+  },
+  "holdout_metrics": {
+    "model": "CatBoostRegressor_Tuned",
+    "MAE": 3998.00311443825,
+    "RMSE": 5017.668288113407,
+    "R2": 0.9819569749872117
+  },
+  "cross_validation_summary": {
+    "model": "CatBoostRegressor_Tuned",
+    "MAE_mean": 4006.259485532385,
+    "MAE_std": 7.827051115078121,
+    "RMSE_mean": 5021.857440491925,
+    "RMSE_std": 7.682889433570374,
+    "R2_mean": 0.9819748234412472,
+    "R2_std": 5.3039208139493825e-05
+  }
+}
