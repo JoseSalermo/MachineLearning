@@ -1,0 +1,12 @@
+services:
+  salary-prediction-api:
+    build:
+      context: .
+    container_name: salary-prediction-api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    environment:
+      MODEL_DIR: /app/model_artifacts
+    volumes:
+      - ./model_artifacts:/app/model_artifacts:ro
